@@ -20,7 +20,7 @@ variable "app_service_name" {
   default     = "appservice"
 }
 
-# https://www.terraform.io/docs/providers/azurerm/r/application_insights.html#application_type
+# 1https://www.terraform.io/docs/providers/azurerm/r/application_insights.html#application_type
 variable "app_insights_app_type" {
   type        = string
   description = "The type of Application Insights to create."
