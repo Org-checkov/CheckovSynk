@@ -1,4 +1,4 @@
-resource "aws_api_gateway_rest_api" "this" {
+/*resource "aws_api_gateway_rest_api" "this" {
   name        = "${local.prefix_with_domain}"
   description = "${var.comment_prefix}${var.api_domain}"
 }
@@ -47,4 +47,4 @@ resource "aws_api_gateway_base_path_mapping" "this" {
   api_id      = "${aws_api_gateway_rest_api.this.id}"
   stage_name  = "${aws_api_gateway_stage.this.stage_name}"
   domain_name = "${aws_api_gateway_domain_name.this.domain_name}"
-}
+} *//
